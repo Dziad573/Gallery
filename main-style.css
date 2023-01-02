@@ -88,7 +88,7 @@ html, body{
     visibility: hidden;
     position: relative;
     border-radius: 5%;
-    border: 2px solid rgb(231, 222, 193);
+    border: 3px solid rgb(231, 222, 193);
     /*  -webkit-box-shadow: 0px 0px 53px 3px rgb(231, 222, 193);
     -moz-box-shadow: 0px 0px 53px 3px rgb(231, 222, 193);
     box-shadow: 0px 0px 33px 1px rgb(231, 222, 193);*/
