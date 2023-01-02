@@ -1,0 +1,152 @@
+html{
+    background-image: url("img/pexels-nao-triponez-129207.jpg");
+    background-position:center;
+    background-color: black;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 1.5;
+}
+html, body{
+    margin: 0px;
+    min-height: 100%;
+    color: rgb(231, 222, 193);
+}
+#header{
+    min-height: 50vh;
+}
+#header > .section{
+    display: inline-block;
+    min-width: 50%;
+    margin: 1vh;
+}
+#headerLeft{
+    float: left;
+    min-width: 20%;
+    max-width: 20%;
+}
+#navigation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: right;
+    position: fixed;
+    right: 0;
+    margin: 2%;
+    z-index: 5;
+}
+#header #navigation{
+    float: right;
+}
+#headerRight{
+    float: right;
+}
+#scroll{
+    margin-left: 15px;
+    padding: 30px;
+}
+#aboutUs{
+    float: left;
+    width: 70%;
+    max-width: 700px;
+    margin: 30px;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    padding: 30px;
+}
+#gallery{
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+.pics{
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 13vh;
+}
+.pics>div{
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+.pics>div>figure{
+    position: relative;
+    text-align: center;
+    width: auto;
+    height: 100%;
+    
+}
+.pics>div>figure>img{
+    visibility: hidden;
+    position: relative;
+    border-radius: 5%;
+    border: 2px solid rgb(231, 222, 193);
+    /*  -webkit-box-shadow: 0px 0px 53px 3px rgb(231, 222, 193);
+    -moz-box-shadow: 0px 0px 53px 3px rgb(231, 222, 193);
+    box-shadow: 0px 0px 33px 1px rgb(231, 222, 193);*/
+}
+#more{
+    width: 100%;
+    text-align: center;
+    margin: 8vh 0 8vh 0;
+}
+#more>div{
+    display:inline-block;
+    border: 5px solid rgb(231, 222, 193);
+    border-radius: 50%;
+    padding: 0 3vh 0 3vh ;
+}
+
+@media only screen and (max-width: 800px) {
+    #aboutUs{
+        float: left;
+        width: 80%;
+        font-size: 15px;
+        margin: 20px;
+        margin-top: 12vh;
+        padding: 20px;
+    }
+    #navigation{
+        float: left;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        font-size: 4vh;
+        margin: 10% 0 10% 0;
+        display: none;
+    }
+    .pics{
+        margin-top: 0vh;
+        flex-direction: column;
+    }
+    .pics>div{
+        width: 100%;
+        margin-top: 15vh;
+        text-align: center;
+    }
+    h1{
+        font-size: 15vw;
+        line-height: 1;
+        margin-top: 0;
+    }
+    h2{
+        font-size: 10vw;
+    
+    }
+    h3{
+        font-size: 7vw;
+        letter-spacing: 5px;
+    }
+    #gallery>h2{
+        font-size: 8vh;
+        text-shadow: 0px 0px 12px rgb(231, 222, 193);
+    }
+}

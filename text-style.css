@@ -1,0 +1,55 @@
+html, body{
+    font-family: monospace;
+    font-size: 20px;
+    -webkit-text-size-adjust: 100%;
+}
+#navigation>div>a>span{
+    margin-right: 15px;
+    position: relative;
+}
+#navigation>div>a>span::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    border-radius: 25%;
+    background-color: rgb(231, 222, 193);
+    box-shadow: 0px 0px 7px 2px rgb(231, 222, 193);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+#navigation>div>a>span:hover::before{
+    transform: scaleX(1);
+}
+a, a:visited, a:hover{
+    text-decoration: none;
+    color: rgb(231, 222, 193);
+}
+#headerRight{
+    text-align: right;
+}
+h1, h2, h3{
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+h1{
+    font-size: 9vw;
+    line-height: 1;
+    margin-top: 0;
+    text-shadow: 0px 0px 13px rgb(231, 222, 193);
+}
+h2{
+    font-size: 5vw;
+    text-shadow: 0px 0px 10px rgb(231, 222, 193);
+}
+h3{
+    font-size: 3vw;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 10px rgb(231, 222, 193);
+}
+#gallery>h2{
+    font-size: 11vh;
+    text-shadow: 0px 0px 20px rgb(231, 222, 193);
+}
