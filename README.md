@@ -1,7 +1,7 @@
 # Gallery </br></br>
 
 ## General info </br>
-The goal of the project is to create a website with many graphics.</br></br>
+</br></br>
 
 ## Technologies: </br></br>
 -HTML version: 5, </br>
